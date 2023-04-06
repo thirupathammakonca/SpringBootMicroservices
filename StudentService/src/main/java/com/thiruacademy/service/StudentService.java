@@ -39,7 +39,7 @@ public class StudentService {
 		buffer.append(student.getStudentId()+"  "+student.getFirstName()+ "  "+student.getLastName()+"  "+student.getEmail()+"  "+student.getDepartmentId());
 		buffer.append("\n");
 		buffer.append(department.getDepartmentName()+"  "+department.getDepartmentCode()+"  "+department.getDepartmentAddress());
-		mailService.sendMail("kthiru.50@gmail.com", "StudentWithDepartmentInfo", buffer.toString());
+		mailService.sendMail("xxxx@gmail.com", "StudentWithDepartmentInfo", buffer.toString());
 		return "Student with department details send to email";
 	}
 }
